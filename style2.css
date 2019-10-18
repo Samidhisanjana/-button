@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #262626;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+a {
+    border: none;
+    cursor: pointer;
+    background: none;
+    text-decoration: none;
+    color: white;
+}
+
+.abc {
+    width: 100px;
+    height: 100px;
+    background: #5abdf7;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    line-height: 100px;
+    font-family: verdana;
+    animation: animate 3s linear infinite;
+
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 0 rgba(122, 215, 252, 0.87), 0 0 0 0 rgba(122, 215, 252, 0.87);
+    }
+
+    40% {
+        box-shadow: 0 0 0 50px rgba(122, 215, 252, 0), 0 0 0 0 rgba(122, 215, 252, 0.87);
+    }
+
+    80% {
+        box-shadow: 0 0 0 50px rgba(122, 215, 252, 0), 0 0 0 30px rgba(122, 215, 252, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(122, 215, 252, 0), 0 0 0 30px rgba(122, 215, 252, 0);
+    }
+
+
+}
